@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+{% block title %}мой блог{% endblock %}
+{% block content %}
+    {% for post in posts %}
+        {{ post.title }}
+    {% endfor %}
+{% endblock %}
